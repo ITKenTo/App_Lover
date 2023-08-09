@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorback"
+    tools:context=".Fragment.DateLoverFragment">
+
+    <LinearLayout
+        android:id="@+id/lin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="1dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lịch Hẹn"
+            android:gravity="center|center_vertical"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_search_lover"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:drawablePadding="10dp"
+        android:hint="Tìm kiếm"
+        android:paddingStart="20dp"
+        android:shadowColor="@color/colorapp"
+        android:textColor="@color/colortext"
+        android:textColorHint="@color/colortext"
+        app:layout_constraintTop_toBottomOf="@+id/lin_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_plans"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ed_search_lover"
+        android:layout_marginTop="10dp"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_plans"
+        />
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/lin_add"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/btn_add_plans"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/forgot"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:background="@drawable/back_login"-->
+    <!--            android:text="Tạo Lịch Hẹn"-->
+    <!--            android:layout_marginStart="30dp"-->
+    <!--            android:layout_marginEnd="30dp"-->
+    <!--            android:layout_marginBottom="10dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            android:elevation="20dp"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="20dp" />-->
+    <!--    </LinearLayout>-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_rawRes="@raw/animation_lkzjgmaw" />
+    <TextView
+        android:id="@+id/tv_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa có lịch hẹn ? Hãy Tạo Lịch Hẹn .....!"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

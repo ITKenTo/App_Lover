@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cute"
+        android:textSize="20sp"
+        android:textColor="@color/colortext"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colortext"
+        android:textSize="16sp"
+        android:text="Kiểu Đáng Yêu Kín Đáo"
+        />
+</LinearLayout>

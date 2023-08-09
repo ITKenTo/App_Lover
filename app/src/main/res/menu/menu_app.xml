@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/home"
+    android:title="Home"
+        app:cnb_iconColor="#d9295c" />
+    />
+<!--    <item-->
+<!--        android:id="@+id/nav_categorys"-->
+<!--        android:icon="@drawable/categories"-->
+<!--        android:title="Categorys"-->
+<!--        app:cnb_iconColor="#d9295c" />-->
+<!--        />-->
+    <item
+        android:id="@+id/nav_datelover"
+        android:icon="@drawable/calendar"
+        android:title="Calendar"
+        app:cnb_iconColor="#d9295c"
+        />
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/setting"
+        android:title="Setting"
+        app:cnb_iconColor="#d9295c" />
+        />
+</menu>

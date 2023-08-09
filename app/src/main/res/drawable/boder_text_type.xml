@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white"
+    >
+
+    <item>
+        <shape>
+
+            <solid android:color="#e7e8ec"/>
+            <corners android:radius="10dp"/>
+
+        </shape>
+    </item>
+
+
+</ripple>

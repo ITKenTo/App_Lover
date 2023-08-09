@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/loveiconapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/loveiconapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment_Ph26746"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.DetailPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UpdateLoverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ChangePassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PersionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddLoverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailLoverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Register.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CreatPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Register.LetstartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
